@@ -1,0 +1,25 @@
+# "Shopee" related
+
+- <https://github.com/dputral/shopeetest>
+- <https://github.com/CalvinWan0101/shopee-home-backend?tab=readme-ov-file>
+- <https://github.com/lthoangg/shopee-crawler>
+- <https://github.com/nhtlongcs/shopee-reviews-crawler>
+- <https://oxylabs.io/products/scraper-api/ecommerce/shopee>
+- <https://github.com/newnewcoder/shopee-crawler>
+- <https://medium.com/@bimo.widyatamoko/multiple-page-shopee-web-scraping-using-selenium-and-python-november-2022-7ab84379479>
+- <https://github.com/hsuanchi/crawler_shopee_public>
+- <https://voz.vn/t/crawl-thong-tin-san-pham-shopee.881042/>
+- <https://stackoverflow.com/questions/59557071/how-can-i-crawl-the-product-items-from-shopee-website>
+- <https://www.kaggle.com/code/hoandan/crawling-data-from-shopee-vn>
+- <https://github.com/dee-ex/shopee-crawler-api>
+- <https://github.com/hoangkimminh/shopee-crawler>
+- <https://github.com/Hsinfu/shopeeCrawler>
+- <https://voz.vn/t/share-tools-crawl-san-pham-shopee.72814/>
+- <https://stackoverflow.com/questions/69035175/crawl-products-information-from-shopee-using-json-url-calls>
+- <https://voz.vn/t/crawl-review-shopee.853408/>
+- <https://github.com/Hoanpc777/Shopee-Crawler>
+- <https://github.com/minhnd-dev/Basic_Crawlers>
+- <https://github.com/nguyenhongson1902/shopee-web-crawler>
+- <https://github.com/l0ngnguyen/shopee-crawling>
+- <https://stackoverflow.com/questions/76371580/bypassing-detection-and-scraping-shopee-with-selenium-wire-and-undetected-chrome>
+-
