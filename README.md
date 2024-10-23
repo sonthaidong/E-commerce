@@ -17,6 +17,8 @@
 - Shipping (Vận chuyển)
 - ShippingServiceProvider (Nhà cung cấp dịch vụ vận chuyển)
 
+- Voucher (mã giảm giá)
+
 - Support (hỗ trợ)
 
 ### 2. Mối quan hệ
@@ -40,6 +42,9 @@
 
 - Một người dùng có thể theo dõi nhiều cửa hàng, một cửa hàng có thể được theo dõi bởi nhiều người dùng (Follow)
 - Một người dùng có thể phản hồi nhiều sản phẩm, một sản phẩm có thể được phản hồi bởi nhiều người dùng (Feedback)
+
+- Một người dùng có thể nhận được nhiều mã giảm giá, một mã giảm giá có thể được sử dụng bởi nhiều người dùng (UserVoucher)
+- Một shop có thể tạo nhiều mã giảm giá (Voucher)
 
 ### 3. Các thuộc tính
 
@@ -173,12 +178,23 @@
 
 - ShippingRecord ? ghi lại dữ liệu từ cảm biến (định vị...) của xe hàng (container...) phục vụ việc hiển thị (cho người dùng theo dõi...) và phân tích chất lượng dịch vụ vận chuyển (lộ trình, vận tốc trung bình...)
 
-- Support
-  - support_id
+- Voucher
+  - voucher_id
+  - voucher_code
+  - voucher_type: (0) giảm giá % - (1) giảm giá tiền - (2) miễn phí vận chuyển
+  - voucher_value
+  - voucher_condition
+  - voucher_start_date
+  - voucher_end_date
+  - voucher_quantity
+  - voucher_shop_id: (-1) if no - (shop_id) if yes
+
+- UserVoucher
   - user_id
-  - support_content
-  - create_date
-  - support_status: (0) nộp thành công - (1) đã tiếp nhận - (2) chưa xử lý - (3) đang xử lý - (4) đã xử lý
+  - voucher_id
+  - voucher_status: (0) chưa sử dụng - (1) đã sử dụng - (2) hết hạn
+  - voucher_use_date
+  - voucher_use_order_id
 
 - Follow
   - shop_id
@@ -191,6 +207,13 @@
   - feedback_content
   - feedback_date
   - feedback_rating
+
+- Support
+  - support_id
+  - user_id
+  - support_content
+  - create_date
+  - support_status: (0) nộp thành công - (1) đã tiếp nhận - (2) chưa xử lý - (3) đang xử lý - (4) đã xử lý
 
 ## Các yêu cầu
 
